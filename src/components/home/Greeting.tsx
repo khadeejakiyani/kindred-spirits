@@ -1,12 +1,15 @@
 import { Sun, Cloud, Moon, Sunrise } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Greeting = () => {
+  const { t } = useLanguage();
+
   const getGreeting = () => {
     const hour = new Date().getHours();
-    if (hour < 12) return { text: "Good Morning", icon: Sunrise, emoji: "🌅" };
-    if (hour < 17) return { text: "Good Afternoon", icon: Sun, emoji: "☀️" };
-    if (hour < 21) return { text: "Good Evening", icon: Cloud, emoji: "🌤️" };
-    return { text: "Good Night", icon: Moon, emoji: "🌙" };
+    if (hour < 12) return { textKey: "greeting.morning", icon: Sunrise, emoji: "🌅" };
+    if (hour < 17) return { textKey: "greeting.afternoon", icon: Sun, emoji: "☀️" };
+    if (hour < 21) return { textKey: "greeting.evening", icon: Cloud, emoji: "🌤️" };
+    return { textKey: "greeting.night", icon: Moon, emoji: "🌙" };
   };
 
   const greeting = getGreeting();
@@ -18,9 +21,9 @@ const Greeting = () => {
           {greeting.emoji}
         </span>
         <div>
-          <h1 className="text-3xl font-serif">{greeting.text}</h1>
+          <h1 className="text-3xl font-serif">{t(greeting.textKey)}</h1>
           <p className="text-lg text-muted-foreground mt-1">
-            It's lovely to see you today
+            {t("greeting.subtitle")}
           </p>
         </div>
       </div>

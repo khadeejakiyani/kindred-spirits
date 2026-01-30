@@ -1,4 +1,5 @@
 import { Play, Heart, Clock } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface Story {
   id: string;
@@ -14,6 +15,8 @@ interface StoryCardProps {
 }
 
 const StoryCard = ({ story }: StoryCardProps) => {
+  const { t } = useLanguage();
+
   return (
     <article className="story-card">
       <div className="flex items-center justify-between">
@@ -33,7 +36,7 @@ const StoryCard = ({ story }: StoryCardProps) => {
           {story.hasListeners && (
             <div 
               className="flex items-center gap-1 text-rose px-3 py-2 rounded-full bg-rose-light"
-              aria-label={`${story.listenerCount} people have listened`}
+              aria-label={`${story.listenerCount} ${t("stories.listened")}`}
             >
               <Heart size={20} fill="currentColor" aria-hidden="true" />
               <span className="font-medium">{story.listenerCount}</span>
@@ -43,7 +46,7 @@ const StoryCard = ({ story }: StoryCardProps) => {
           {/* Play button */}
           <button
             className="p-4 rounded-full bg-primary text-primary-foreground"
-            aria-label={`Play story: ${story.title}`}
+            aria-label={`Play: ${story.title}`}
           >
             <Play size={24} fill="currentColor" aria-hidden="true" />
           </button>

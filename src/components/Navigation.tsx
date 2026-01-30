@@ -1,14 +1,16 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { Home, Users, Sparkles, BookOpen } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navigation = () => {
   const location = useLocation();
+  const { t } = useLanguage();
 
   const navItems = [
-    { path: "/", label: "Home", icon: Home },
-    { path: "/my-circle", label: "My Circle", icon: Users },
-    { path: "/activities", label: "Activities", icon: Sparkles },
-    { path: "/my-stories", label: "My Stories", icon: BookOpen },
+    { path: "/", labelKey: "nav.home", icon: Home },
+    { path: "/my-circle", labelKey: "nav.myCircle", icon: Users },
+    { path: "/activities", labelKey: "nav.activities", icon: Sparkles },
+    { path: "/my-stories", labelKey: "nav.myStories", icon: BookOpen },
   ];
 
   const isActive = (path: string) => {
@@ -24,7 +26,7 @@ const Navigation = () => {
     >
       <div className="container max-w-2xl mx-auto">
         <ul className="flex justify-around items-center py-2">
-          {navItems.map(({ path, label, icon: Icon }) => (
+          {navItems.map(({ path, labelKey, icon: Icon }) => (
             <li key={path}>
               <NavLink
                 to={path}
@@ -37,7 +39,7 @@ const Navigation = () => {
                   className="mb-1"
                   aria-hidden="true"
                 />
-                <span className="text-sm font-medium">{label}</span>
+                <span className="text-sm font-medium">{t(labelKey)}</span>
               </NavLink>
             </li>
           ))}

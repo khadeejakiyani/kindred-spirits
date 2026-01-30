@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         serif: ['Merriweather', 'Georgia', 'serif'],
         body: ['Source Sans 3', 'system-ui', 'sans-serif'],
+        urdu: ['Noto Nastaliq Urdu', 'serif'],
       },
       fontSize: {
         'base': ['1.25rem', { lineHeight: '1.7' }],

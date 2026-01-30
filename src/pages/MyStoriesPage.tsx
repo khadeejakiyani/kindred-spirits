@@ -1,6 +1,7 @@
 import { useState } from "react";
 import RecordStoryButton from "@/components/stories/RecordStoryButton";
 import StoryCard from "@/components/stories/StoryCard";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const sampleStories = [
   {
@@ -39,14 +40,15 @@ const sampleStories = [
 
 const MyStoriesPage = () => {
   const [stories] = useState(sampleStories);
+  const { t } = useLanguage();
 
   return (
     <div className="container max-w-2xl mx-auto px-4 py-8">
       {/* Page header */}
       <header className="mb-8">
-        <h1 className="text-3xl font-serif mb-2">My Stories</h1>
+        <h1 className="text-3xl font-serif mb-2">{t("stories.title")}</h1>
         <p className="text-lg text-muted-foreground">
-          Your memories, recipes, and wisdom
+          {t("stories.subtitle")}
         </p>
       </header>
 
@@ -56,7 +58,7 @@ const MyStoriesPage = () => {
       {/* Stories list */}
       <section aria-labelledby="stories-heading">
         <h2 id="stories-heading" className="text-2xl font-serif mb-6">
-          Your Recorded Stories
+          {t("stories.yourStories")}
         </h2>
         
         <div className="space-y-4">

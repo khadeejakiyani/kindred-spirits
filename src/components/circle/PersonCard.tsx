@@ -1,4 +1,5 @@
 import { Mic, Headphones } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface Person {
   id: string;
@@ -13,6 +14,7 @@ interface PersonCardProps {
 }
 
 const PersonCard = ({ person }: PersonCardProps) => {
+  const { t } = useLanguage();
   const isAvailable = person.status === "available";
 
   return (
@@ -35,7 +37,7 @@ const PersonCard = ({ person }: PersonCardProps) => {
               aria-hidden="true"
             />
             <span className="text-sm">
-              {isAvailable ? "Available" : "Resting"}
+              {isAvailable ? t("circle.available") : t("circle.resting")}
             </span>
           </div>
         </div>
@@ -45,15 +47,15 @@ const PersonCard = ({ person }: PersonCardProps) => {
       <div className="flex gap-3">
         <button
           className="flex-1 flex items-center justify-center gap-3 p-4 rounded-2xl bg-primary text-primary-foreground font-medium"
-          aria-label={`Send voice message to ${person.name}`}
+          aria-label={`${t("circle.sendVoice")} ${person.name}`}
         >
           <Mic size={24} aria-hidden="true" />
-          <span>Send Voice Message</span>
+          <span>{t("circle.sendVoice")}</span>
         </button>
         
         <button
           className="flex items-center justify-center p-4 rounded-2xl bg-secondary text-secondary-foreground"
-          aria-label={`Listen to messages from ${person.name}`}
+          aria-label={`${t("circle.listen")} ${person.name}`}
         >
           <Headphones size={24} aria-hidden="true" />
         </button>
