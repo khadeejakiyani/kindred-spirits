@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navigation from "./Navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
+import HelpButton from "./help/HelpButton";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Layout = () => {
@@ -17,6 +18,9 @@ const Layout = () => {
       <main className="flex-1 pb-32">
         <Outlet />
       </main>
+      
+      {/* Help button */}
+      <HelpButton />
       
       {/* Fixed bottom navigation */}
       <Navigation />

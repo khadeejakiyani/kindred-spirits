@@ -128,6 +128,39 @@ const translations: Record<Language, Record<string, string>> = {
     "suggestion.4": "Look through old photographs",
     "suggestion.5": "Write about a happy memory",
     
+    // Help
+    "help.button": "Help",
+    "help.title": "How to Use This Page",
+    "help.listen": "Listen to Instructions",
+    "help.stop": "Stop",
+    "help.instructions": "Step by Step",
+    "help.navigation": "Use the buttons at the bottom to go to other pages",
+    
+    // Help - Home Page
+    "help.home.title": "Home Page",
+    "help.home.audio": "Welcome to the Home page. Here you can tell us how you're feeling by pressing one of the four big buttons: Calm, Okay, Low, or Anxious. Below that, you can see your plan for today with activities like Tea Time and gentle reminders. Take your time, there's no rush.",
+    "help.home.steps": "Look at the greeting at the top|Press the button that shows how you feel|See your activities for today below|Use the bottom buttons to visit other pages",
+    
+    // Help - My Circle Page
+    "help.circle.title": "My Circle Page",
+    "help.circle.audio": "This is your Circle page where you can see your trusted friends and family. Each person has a card with their picture. You can press Send Voice Message to record a message for them, or press Listen to hear messages they sent you. The Tea Time button lets you join a group chat.",
+    "help.circle.steps": "See your friends and family cards|Press Send Voice Message to record|Press Listen to hear their messages|Press Tea Time to join a group chat",
+    
+    // Help - Activities Page
+    "help.activities.title": "Activities Page",
+    "help.activities.audio": "This is the Activities page with gentle things to do. At the top you'll see today's suggestion. Below are cards for different activities: Listen to Stories, Knitting and Crafts, Gentle Brain Games, and Memory Prompts. Just press any card to start that activity. There are no timers or scores, so take your time.",
+    "help.activities.steps": "Read today's gentle suggestion at the top|Choose an activity by pressing its card|Listen to Stories for calming tales|Try Memory Prompts to remember happy times",
+    
+    // Help - My Stories Page
+    "help.stories.title": "My Stories Page",
+    "help.stories.audio": "This is your Stories page where you can share your memories and wisdom. Press the big Record a New Story button to start recording. Your recorded stories appear below. Each story shows a play button to listen, and a heart icon shows when someone has listened to your story.",
+    "help.stories.steps": "Press Record a New Story to share a memory|Speak clearly into your device|Your stories appear in a list below|Press Play to listen to any story|Hearts show when others have listened",
+    
+    // Help - Health Page
+    "help.health.title": "Health Page",
+    "help.health.audio": "This is your Health page to track your wellbeing. At the top, choose between Blood Pressure and Records. For blood pressure, press Add New Reading and enter your numbers. In Records, you can add your medications and doctor appointments. Everything is saved automatically.",
+    "help.health.steps": "Choose Blood Pressure or Records at the top|For blood pressure, press Add New Reading|Enter your numbers and press Save|In Records, add your medications|Add doctor appointments with date and time",
+    
     // Language
     "language.select": "Language",
     "language.english": "English",
@@ -250,6 +283,39 @@ const translations: Record<Language, Record<string, string>> = {
     "suggestion.3": "کسی کے ساتھ پسندیدہ ترکیب شیئر کریں",
     "suggestion.4": "پرانی تصاویر دیکھیں",
     "suggestion.5": "ایک خوشگوار یاد کے بارے میں لکھیں",
+    
+    // Help
+    "help.button": "مدد",
+    "help.title": "اس صفحے کو کیسے استعمال کریں",
+    "help.listen": "ہدایات سنیں",
+    "help.stop": "رکیں",
+    "help.instructions": "قدم بہ قدم",
+    "help.navigation": "دوسرے صفحات پر جانے کے لیے نیچے کے بٹن استعمال کریں",
+    
+    // Help - Home Page
+    "help.home.title": "ہوم پیج",
+    "help.home.audio": "ہوم پیج میں خوش آمدید۔ یہاں آپ ہمیں بتا سکتی ہیں کہ آپ کیسا محسوس کر رہی ہیں چار بڑے بٹنوں میں سے ایک دبا کر: پرسکون، ٹھیک، اداس، یا پریشان۔ نیچے آپ آج کا منصوبہ دیکھ سکتی ہیں جیسے چائے کا وقت اور یاد دہانیاں۔ آرام سے لیں، کوئی جلدی نہیں۔",
+    "help.home.steps": "اوپر خوش آمدید پیغام دیکھیں|جو بٹن آپ کے جذبات ظاہر کرے وہ دبائیں|نیچے آج کی سرگرمیاں دیکھیں|دوسرے صفحات کے لیے نیچے کے بٹن استعمال کریں",
+    
+    // Help - My Circle Page
+    "help.circle.title": "میرا حلقہ",
+    "help.circle.audio": "یہ آپ کے حلقے کا صفحہ ہے جہاں آپ اپنے قابل اعتماد دوست اور خاندان دیکھ سکتی ہیں۔ ہر شخص کا ایک کارڈ ہے۔ آواز کا پیغام بھیجیں دبائیں ان کے لیے پیغام ریکارڈ کرنے کے لیے، یا سنیں دبائیں ان کے پیغامات سننے کے لیے۔ چائے کا وقت بٹن سے گروپ چیٹ میں شامل ہوں۔",
+    "help.circle.steps": "اپنے دوستوں اور خاندان کے کارڈ دیکھیں|آواز کا پیغام بھیجیں دبائیں ریکارڈ کرنے کے لیے|سنیں دبائیں ان کے پیغامات کے لیے|چائے کا وقت دبائیں گروپ چیٹ کے لیے",
+    
+    // Help - Activities Page
+    "help.activities.title": "سرگرمیاں",
+    "help.activities.audio": "یہ سرگرمیوں کا صفحہ ہے جہاں ہلکی پھلکی چیزیں ہیں۔ اوپر آج کی تجویز ہے۔ نیچے مختلف سرگرمیوں کے کارڈ ہیں: کہانیاں سنیں، بنائی اور دستکاری، ہلکے ذہنی کھیل، اور یادوں کے اشارے۔ کوئی بھی کارڈ دبائیں شروع کرنے کے لیے۔ کوئی وقت یا سکور نہیں، آرام سے کریں۔",
+    "help.activities.steps": "اوپر آج کی نرم تجویز پڑھیں|کوئی سرگرمی چنیں کارڈ دبا کر|کہانیاں سنیں پرسکون کہانیوں کے لیے|یادوں کے اشارے خوشگوار لمحات یاد کرنے کے لیے",
+    
+    // Help - My Stories Page
+    "help.stories.title": "میری کہانیاں",
+    "help.stories.audio": "یہ آپ کی کہانیوں کا صفحہ ہے جہاں آپ اپنی یادیں اور حکمت شیئر کر سکتی ہیں۔ نئی کہانی ریکارڈ کریں کا بڑا بٹن دبائیں ریکارڈنگ شروع کرنے کے لیے۔ آپ کی کہانیاں نیچے دکھائی دیتی ہیں۔ ہر کہانی پر چلانے کا بٹن ہے، اور دل کا نشان بتاتا ہے کہ کسی نے سنا ہے۔",
+    "help.stories.steps": "نئی کہانی ریکارڈ کریں دبائیں یاد شیئر کرنے کے لیے|اپنے آلے میں واضح بولیں|آپ کی کہانیاں نیچے فہرست میں آئیں گی|کوئی کہانی سننے کے لیے چلائیں دبائیں|دل بتاتے ہیں کہ دوسروں نے سنا",
+    
+    // Help - Health Page
+    "help.health.title": "صحت کا صفحہ",
+    "help.health.audio": "یہ آپ کا صحت کا صفحہ ہے اپنی صحت کا خیال رکھنے کے لیے۔ اوپر بلڈ پریشر یا ریکارڈ میں سے چنیں۔ بلڈ پریشر کے لیے نئی ریڈنگ شامل کریں دبائیں اور نمبر لکھیں۔ ریکارڈ میں اپنی دوائیں اور ڈاکٹر کی ملاقاتیں شامل کریں۔ سب کچھ خود بخود محفوظ ہوتا ہے۔",
+    "help.health.steps": "اوپر بلڈ پریشر یا ریکارڈ چنیں|بلڈ پریشر کے لیے نئی ریڈنگ شامل کریں دبائیں|اپنے نمبر لکھیں اور محفوظ کریں دبائیں|ریکارڈ میں اپنی دوائیں شامل کریں|تاریخ اور وقت کے ساتھ ڈاکٹر کی ملاقاتیں شامل کریں",
     
     // Language
     "language.select": "زبان",
