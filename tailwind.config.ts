@@ -77,6 +77,7 @@ export default {
         'soft-peach': "hsl(var(--soft-peach))",
         'calm-blue': "hsl(var(--calm-blue))",
         'sunny-yellow': "hsl(var(--sunny-yellow))",
+        'health': "hsl(var(--health))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

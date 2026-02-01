@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { Home, Users, Sparkles, BookOpen } from "lucide-react";
+import { Home, Users, Sparkles, BookOpen, Heart } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navigation = () => {
@@ -11,6 +11,7 @@ const Navigation = () => {
     { path: "/my-circle", labelKey: "nav.myCircle", icon: Users },
     { path: "/activities", labelKey: "nav.activities", icon: Sparkles },
     { path: "/my-stories", labelKey: "nav.myStories", icon: BookOpen },
+    { path: "/health", labelKey: "nav.health", icon: Heart },
   ];
 
   const isActive = (path: string) => {
