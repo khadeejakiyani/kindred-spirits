@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import MyCirclePage from "./pages/MyCirclePage";
 import ActivitiesPage from "./pages/ActivitiesPage";
 import MyStoriesPage from "./pages/MyStoriesPage";
+import HealthPage from "./pages/HealthPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
               <Route path="my-circle" element={<MyCirclePage />} />
               <Route path="activities" element={<ActivitiesPage />} />
               <Route path="my-stories" element={<MyStoriesPage />} />
+              <Route path="health" element={<HealthPage />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>
