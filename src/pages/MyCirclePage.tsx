@@ -5,28 +5,28 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const circleMembers = [
   {
     id: "1",
-    name: "Margaret",
+    name: "Fatima",
     status: "available" as const,
     avatar: "👩‍🦳",
     relationship: "Sister",
   },
   {
     id: "2", 
-    name: "Dorothy",
+    name: "Ayesha",
     status: "available" as const,
     avatar: "👵",
     relationship: "Best Friend",
   },
   {
     id: "3",
-    name: "Helen",
+    name: "Zainab",
     status: "resting" as const,
     avatar: "👩‍🦱",
     relationship: "Daughter",
   },
   {
     id: "4",
-    name: "Patricia",
+    name: "Khadija",
     status: "available" as const,
     avatar: "👩‍🦰",
     relationship: "Neighbour",
