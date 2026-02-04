@@ -16,6 +16,7 @@ const HelpButton = () => {
     if (path === "/") return "home";
     if (path === "/my-circle") return "circle";
     if (path === "/activities") return "activities";
+    if (path === "/entertainment") return "entertainment";
     if (path === "/my-stories") return "stories";
     if (path === "/health") return "health";
     return "home";

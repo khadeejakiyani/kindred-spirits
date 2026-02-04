@@ -8,6 +8,7 @@ import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import MyCirclePage from "./pages/MyCirclePage";
 import ActivitiesPage from "./pages/ActivitiesPage";
+import EntertainmentPage from "./pages/EntertainmentPage";
 import MyStoriesPage from "./pages/MyStoriesPage";
 import HealthPage from "./pages/HealthPage";
 import NotFound from "./pages/NotFound";
@@ -26,6 +27,7 @@ const App = () => (
               <Route index element={<HomePage />} />
               <Route path="my-circle" element={<MyCirclePage />} />
               <Route path="activities" element={<ActivitiesPage />} />
+              <Route path="entertainment" element={<EntertainmentPage />} />
               <Route path="my-stories" element={<MyStoriesPage />} />
               <Route path="health" element={<HealthPage />} />
             </Route>
