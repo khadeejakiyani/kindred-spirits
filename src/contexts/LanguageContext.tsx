@@ -25,7 +25,16 @@ const translations: Record<Language, Record<string, string>> = {
     "greeting.night": "Good Night",
     "greeting.subtitle": "It's lovely to see you today",
     
+    // Login
+    "login.welcome": "Welcome",
+    "login.subtitle": "Let's start your day together",
+    "login.nameLabel": "What is your name?",
+    "login.namePlaceholder": "Enter your name",
+    "login.continue": "Continue",
+    
     // Mood Check-in
+    "mood.greeting": "Hello",
+    "mood.subtitle": "Let's check in on how you're feeling",
     "mood.question": "How are you feeling today?",
     "mood.calm": "Calm",
     "mood.okay": "Okay",
@@ -36,6 +45,7 @@ const translations: Record<Language, Record<string, string>> = {
     "mood.okayResponse": "That's perfectly fine.",
     "mood.lowResponse": "I'm here with you.",
     "mood.anxiousResponse": "Take a deep breath.",
+    "mood.continue": "Continue to Home",
     
     // Today's Plan
     "plan.title": "Today's Plan",
@@ -221,7 +231,16 @@ const translations: Record<Language, Record<string, string>> = {
     "greeting.night": "شب بخیر",
     "greeting.subtitle": "آج آپ سے مل کر خوشی ہوئی",
     
+    // Login
+    "login.welcome": "خوش آمدید",
+    "login.subtitle": "آئیے اپنا دن ساتھ شروع کریں",
+    "login.nameLabel": "آپ کا نام کیا ہے؟",
+    "login.namePlaceholder": "اپنا نام لکھیں",
+    "login.continue": "جاری رکھیں",
+    
     // Mood Check-in
+    "mood.greeting": "السلام علیکم",
+    "mood.subtitle": "آئیے دیکھیں آپ کیسا محسوس کر رہی ہیں",
     "mood.question": "آج آپ کیسا محسوس کر رہی ہیں؟",
     "mood.calm": "پرسکون",
     "mood.okay": "ٹھیک",
@@ -232,6 +251,7 @@ const translations: Record<Language, Record<string, string>> = {
     "mood.okayResponse": "یہ بالکل ٹھیک ہے۔",
     "mood.lowResponse": "میں آپ کے ساتھ ہوں۔",
     "mood.anxiousResponse": "گہری سانس لیں۔",
+    "mood.continue": "گھر جاری رکھیں",
     
     // Today's Plan
     "plan.title": "آج کا منصوبہ",

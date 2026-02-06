@@ -1,21 +1,35 @@
-import { useState } from "react";
-import MoodCheckIn from "@/components/home/MoodCheckIn";
 import TodaysPlan from "@/components/home/TodaysPlan";
 import Greeting from "@/components/home/Greeting";
+import { useOnboarding } from "@/contexts/OnboardingContext";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HomePage = () => {
-  const [selectedMood, setSelectedMood] = useState<string | null>(null);
+  const { userName, selectedMood } = useOnboarding();
+  const { t } = useLanguage();
+
+  const getMoodEmoji = (moodId: string | null) => {
+    switch (moodId) {
+      case "calm": return "😌";
+      case "okay": return "🙂";
+      case "low": return "😔";
+      case "anxious": return "😟";
+      default: return "👋";
+    }
+  };
 
   return (
     <div className="container max-w-2xl mx-auto px-4 py-8">
-      {/* Warm greeting */}
-      <Greeting />
+      {/* Personalized greeting */}
+      <Greeting userName={userName} />
       
-      {/* Mood check-in */}
-      <MoodCheckIn 
-        selectedMood={selectedMood} 
-        onMoodSelect={setSelectedMood} 
-      />
+      {/* Mood summary (already checked in during onboarding) */}
+      {selectedMood && (
+        <div className="mb-8 p-5 bg-card rounded-2xl text-center">
+          <p className="text-lg">
+            {t("mood.thanks")} {getMoodEmoji(selectedMood)}
+          </p>
+        </div>
+      )}
       
       {/* Today's plan */}
       <TodaysPlan />

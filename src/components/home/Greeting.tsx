@@ -1,7 +1,11 @@
 import { Sun, Cloud, Moon, Sunrise } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const Greeting = () => {
+interface GreetingProps {
+  userName?: string;
+}
+
+const Greeting = ({ userName }: GreetingProps) => {
   const { t } = useLanguage();
 
   const getGreeting = () => {
@@ -21,7 +25,9 @@ const Greeting = () => {
           {greeting.emoji}
         </span>
         <div>
-          <h1 className="text-3xl font-serif">{t(greeting.textKey)}</h1>
+          <h1 className="text-3xl font-serif">
+            {t(greeting.textKey)}{userName ? `, ${userName}` : ""}
+          </h1>
           <p className="text-lg text-muted-foreground mt-1">
             {t("greeting.subtitle")}
           </p>
